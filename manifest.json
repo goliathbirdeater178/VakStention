@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "VakStention",
+  "description": "Replaces every image on a page with a picture of Wak",
+  "version": "1.0",
+  
+  "icons": {
+	"16": "vak16.png",
+	"48": "vak48.png",
+	"128": "vak128.png"
+  },
+  
+  "content_scripts": [{
+	"js": ["vak.js"],
+	"matches": ["<all_urls>"]
+  }],
+  
+  "web_accessible_resources": ["vak.png"]
+  
+}
